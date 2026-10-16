@@ -1,0 +1,22 @@
+{
+  "churn_v1.csv": {
+    "rows": 6000,
+    "columns": 10,
+    "sha256": "52b148764fa4964ce91a1e685a671d86385dd1c2f3d7dfe5e0dc64f9ddcac18c"
+  },
+  "churn_v2.csv": {
+    "rows": 6000,
+    "columns": 10,
+    "sha256": "98f9e11434092794cc048bca93d350aac624a6032481ff660f66c5ae641aeadf"
+  },
+  "churn_corrupt.csv": {
+    "rows": 1200,
+    "columns": 10,
+    "sha256": "5906918433214bdb9bfe89221de9490525312d1df52cad60ace09bd16961c0b6"
+  },
+  "churn_drift.csv": {
+    "rows": 5400,
+    "columns": 12,
+    "sha256": "dc9c6fe4005ea241f1d93744017668e3f2eacae91f2506e21af2180fd484a050"
+  }
+}

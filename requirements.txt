@@ -1,0 +1,37 @@
+
+
+#   python -m venv .venv
+#   source .venv/bin/activate          # Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+
+# --- core ------------------------------------------------------------------
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+matplotlib==3.11.2
+
+# --- experiment tracking + registry (Sessions 1, 2, 3, 4) ------------------
+# NOTE: MLflow 3.x refuses the old file-based store ('./mlruns'). This repo
+# uses a SQLite backend throughout; see src/mlflow_setup.py.
+mlflow==3.17.1
+
+# --- data contracts / validation gate (Session 2) --------------------------
+pandera==0.34.1
+
+# --- orchestration (Session 3) ---------------------------------------------
+prefect==3.8.8
+sqlalchemy>=2.0,<2.1          # see pin note 1 above -- NOT optional
+
+# --- serving (Sessions 4, 5, 6) --------------------------------------------
+fastapi==0.143.2
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+
+# --- drift detection (Session 5) -------------------------------------------
+evidently==0.7.23
+
+# --- AWS (Sessions 4, 5, 6) ------------------------------------------------
+boto3>=1.34
